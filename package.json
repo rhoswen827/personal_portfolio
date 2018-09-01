@@ -1,0 +1,14 @@
+{
+  "name": "ruoying_jiang_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Ruoying Jiang",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
