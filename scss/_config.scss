@@ -11,7 +11,7 @@ $background-opacity: 0.9;
 @mixin background {
     @if $show-home-image {
         &#bg-img {
-            background:$home-image;
+            background: $home-image;
             background-attachment: fixed;
             background-size: cover;
         
@@ -29,6 +29,15 @@ $background-opacity: 0.9;
   }
 }
 
+//set text color using function to return 
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
 
 //media query mixins
 @mixin mediaSm {
@@ -40,7 +49,7 @@ $background-opacity: 0.9;
 @mixin mediaMd {
     @media screen and (max-width: 768px) {
         @content;
-    }
+    } 
 }
 
 @mixin mediaLg {
